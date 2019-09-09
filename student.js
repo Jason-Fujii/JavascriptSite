@@ -88,3 +88,31 @@ function getAge()
     else
         document.getElementById("age").innerHTML = "You are a senior citizen";
 }//end getAge()
+
+function getBreaks()
+{
+    
+     do{
+         var num = prompt("Enter a number between 1 and 5", "");
+     }while(num > 5 || num < 1)
+     var str = "";
+     while(num > 0){
+          str += "<br>";
+          num--;
+     }
+     document.getElementById("breaks").innerHTML = str;
+}//end getBreaks
+
+function getCards()
+{
+    do{
+        var cards = prompt("Enter a number between 2 and 7", "");
+    }while(cards > 7 || card < 2)
+    var num = 0;
+    var str = "";
+    while(num < cards)
+    {
+        str += "<span id = 'card" +num+ "'>Card #" +num+ "</span>";
+    }
+    document.getElementById("cards").innerHTML = str;
+}//end getCards
