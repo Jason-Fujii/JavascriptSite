@@ -107,7 +107,7 @@ function getCards()
 {
     do{
         var cards = prompt("Enter a number between 2 and 7", "");
-    }while(!(cards > 7) && !(cards < 2))
+    }while((cards > 7) || (cards < 2))
     var num = 0;
     var str = "";
     while(num < cards)
@@ -117,3 +117,4 @@ function getCards()
     }
     document.getElementById("cards").innerHTML = str;
 }//end getCards
+
